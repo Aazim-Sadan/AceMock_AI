@@ -1,6 +1,6 @@
 import { MainRoutes } from "@/lib/helper"
 import { cn } from "@/lib/utils"
-import { NavLink, useLocation, useNavigate } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 
 interface NavigationRoutesProps {
     isMobile?: boolean
