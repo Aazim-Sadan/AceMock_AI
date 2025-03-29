@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"; // Import Lucide icons
+import { Facebook, Twitter, Linkedin, Github } from "lucide-react"; // Import Lucide icons
 import { Link } from "react-router-dom";
 import Container from "@/components/container"
 import { MainRoutes } from "@/lib/helper";
@@ -61,7 +61,7 @@ export const Footer = () => {
 
           {/* Second Column: About Us */}
           <div>
-            <h3 className="font-bold text-lg mb-4">About Us</h3>
+            <h3 id="about" className="font-bold text-lg mb-4">About Us</h3>
             <p>
               We are committed to helping you unlock your full potential with
               AI-powered tools. Our platform offers a wide range of resources to
@@ -71,7 +71,7 @@ export const Footer = () => {
 
           {/* Third Column: Services */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Services</h3>
+            <h3 id="services" className="font-bold text-lg mb-4">Services</h3>
             <ul>
               <FooterLink to="/services/interview-prep">
                 Interview Preparation
@@ -87,9 +87,19 @@ export const Footer = () => {
 
           {/* Fourth Column: Address and Social Media */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Contact Us</h3>
+            <h3 id="contact" className="font-bold text-lg mb-4">Contact Us</h3>
             <p className="mb-4">123 AI Street, Tech City, 12345</p>
             <div className="flex gap-4">
+              <SocialLink
+                href="https://github.com/Aazim-Sadan"
+                icon={<Github size={24} />}
+                hoverColor="text-pink-500"
+              />
+              <SocialLink
+                href="https://www.linkedin.com/in/aazim-sadan"
+                icon={<Linkedin size={24} />}
+                hoverColor="text-blue-700"
+              />
               <SocialLink
                 href="https://facebook.com"
                 icon={<Facebook size={24} />}
@@ -99,16 +109,6 @@ export const Footer = () => {
                 href="https://twitter.com"
                 icon={<Twitter size={24} />}
                 hoverColor="text-blue-400"
-              />
-              <SocialLink
-                href="https://instagram.com"
-                icon={<Instagram size={24} />}
-                hoverColor="text-pink-500"
-              />
-              <SocialLink
-                href="https://linkedin.com"
-                icon={<Linkedin size={24} />}
-                hoverColor="text-blue-700"
               />
             </div>
           </div>

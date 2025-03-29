@@ -20,7 +20,7 @@ const InterviewPin = ({ interview, onMockPage = false }: InterviewPinProps) => {
     const navigate = useNavigate();
 
 
-    return <Card className="p-4 rounded-md shadow-none hover:shadow-md shadow-gray-100 cursor-pointer transition-all space-y-4">
+    return <Card className="p-4 rounded-md shadow-none hover:shadow-md shadow-gray-100 cursor-pointer transition-all space-y-2">
         <CardTitle className="text-lg">{interview?.position}</CardTitle>
         <CardDescription>{interview.description}</CardDescription>
         <div className="w-full flex items-center gap-2 flex-wrap">

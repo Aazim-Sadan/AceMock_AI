@@ -10,7 +10,7 @@ const ProfileContainer = () => {
     if (!isLoaded) {
         return (
             <div className="flex items-center">
-                <Loader className="min-w-4 min-h-4 animate-spin text-emerald-500" />
+                <Loader className="min-w-6 min-h-6 animate-spin text-emerald-500" />
             </div>
         )
     }
@@ -18,7 +18,9 @@ const ProfileContainer = () => {
     return (
         <div className="flex items-center gap-6">
             {isSignedIn ? (
-                <UserButton afterSignOutUrl="/" />
+                <div className="scale-120">
+                    <UserButton afterSignOutUrl="/" />
+                </div>
             ) : (
                 <Link to={"/signin"}>
                     <Button size={"sm"}>Get Started</Button>
