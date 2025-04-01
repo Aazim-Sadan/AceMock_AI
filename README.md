@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
+# AceMock_AI - AI-driven interview questions using Gemini AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A repository for AceMock_AI app using Gemini AI to generate intelligent interview questions, analyze user responses, and provide real-time feedback, helping users improve their interview skills effectively.
+<br/>
+- <a target="_blank" href="https://acemock-ai-react.web.app">App Link 🔗</a>
 
-Currently, two official plugins are available:
+# Interview Questions Page
+- Google Gemini AI for realistic AI-driven interview questions 
+- Text-to-Speech Analysis for feedback on your responses
+<img src="./assets/interview_page.png"></img>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Feedback of your interview
+- AI-generated analysis of your interview performance
+- Rating your overall performace
+- Expected an ideal answer might includes, helping you understand the key points to cover in similar future questions.
+- A record of your original response
+- Feedback on your responses, offering constructive criticism and tips for enhancement.
+<img src="./assets/feedback_page.png"></img>
 
-## Expanding the ESLint configuration
+# Home Page
+- A well-designed homepage.
+<img src="./assets/main_page.png"></img>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Dashboard
+- All your AI Mock interview questions are displayed.
+<img src="./assets/dashboard.png"></img>
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+# Edit or Delete
+- User can edit or delete the interview according to your preferences.
+<img src="./assets/edit_interview.png"></img>
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Phone View
+- Compatible with all types of devices, the platform is fully responsive and optimized for mobile, tablet etc...
+<img src="./assets/phone_view.png"></img>
+<img src="./assets/phone_view2.png"></img>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Contact
+For questions or feedback, feel free to reach out:
+- Email : aazimsadan99@gmail.com
+- Linkedin : https://www.linkedin.com/in/aazim-sadan
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
