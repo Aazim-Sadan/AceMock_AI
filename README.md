@@ -6,14 +6,14 @@ A repository for AceMock_AI app using Gemini AI to generate intelligent intervie
 
 # Interview Questions Page
 - Google Gemini AI for realistic AI-driven interview questions 
-- Text-to-Speech Analysis for feedback on your responses
+- Text-to-Speech Analysis for feedback on user responses
 <img src="./assets/interview_page.png"></img>
 
 # Feedback of your interview
-- AI-generated analysis of your interview performance
-- Rating your overall performace
+- AI-generated analysis your interview performance
+- Rating overall performace
 - Expected an ideal answer might includes, helping you understand the key points to cover in similar future questions.
-- A record of your original response
+- A record of original response
 - Feedback on your responses, offering constructive criticism and tips for enhancement.
 <img src="./assets/feedback_page.png"></img>
 
